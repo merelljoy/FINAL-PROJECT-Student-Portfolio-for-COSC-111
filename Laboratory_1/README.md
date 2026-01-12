@@ -11,7 +11,7 @@ This project is the first laboratory activity for the **IoT Systems Implementati
 
 ---
 
-## 🛠️ Hardware Configuration
+## Hardware Configuration
 The circuit consists of five LEDs connected to the following Arduino Digital Pins:
 * **LED 1:** Pin 12
 * **LED 2:** Pin 11
