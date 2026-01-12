@@ -31,8 +31,6 @@ This activity demonstrates a two-way connection. When you press a button on the 
 3. **Python Processing:** Python receives the letter and immediately sends a number ("1", "2", or "3") back to Arduino.
 4. **Inbound Signal:** Arduino receives the number and toggles (ON/OFF) the matching LED.
 
-
-
 ---
 
 ## How to Use
@@ -41,9 +39,3 @@ This activity demonstrates a two-way connection. When you press a button on the 
 3. **Run:** Start the Python script on your laptop.
 4. **Test:** Press a button. The LED should toggle almost instantly.
 
----
-
-## Files in this Repository
-* `Activity6.ino`: The Arduino code.
-* `Activity6.py`: The Python script.
-* `Diagram.png`: The circuit layout.
