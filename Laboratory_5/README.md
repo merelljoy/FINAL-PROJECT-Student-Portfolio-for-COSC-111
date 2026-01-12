@@ -34,16 +34,3 @@ The Python script runs a menu loop:
 * Handles case-insensitive inputs (e.g., 'r' and 'R' both work).
 * X: Closes the connection and exits the program.
 
----
-
-## Repository Files
-* Activity5_Sketch.ino: Arduino source code.
-* Activity5_Script.py: Python source code.
-* Circuit_Diagram.png: Visual guide for the breadboard.
-
----
-
-## Instructions
-1. Upload the Arduino sketch to the MCU.
-2. Install the pyserial library using: pip install pyserial
-3. Run the Python script and select an option from the menu to control the LEDs.
