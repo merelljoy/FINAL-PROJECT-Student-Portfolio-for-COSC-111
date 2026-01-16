@@ -28,7 +28,7 @@ This project demonstrates how to control an Arduino using the **Serial Monitor**
 
 ---
 
-## 🚀 How to Run
+## How to Run
 1. Upload the code and open the **Serial Monitor** at **9600 Baud**.
 2. Trigger the sensor (apply heat or light).
 3. Once the LED starts blinking, type `stop` in the Serial input bar to reset the system.
