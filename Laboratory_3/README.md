@@ -1,4 +1,4 @@
-# Laboratory Activity #3 Working with Sensors
+# Laboratory Activity #3: Working with Sensors
 
 ---
 This laboratory activity introduces the use of **sensor components** commonly applied in IoT systems and demonstrates how multiple sensors can be integrated into a single Arduino-based circuit. The activity implements a **simple fire detection system** using a **thermistor** and a **photoresistor**.
