@@ -1,4 +1,4 @@
-# Laboratory Activity #5 Receiving Serial Connection Using Arduino from Python
+# Laboratory Activity #5: Receiving Serial Connection Using Arduino from Python
 
 ---
 This laboratory activity demonstrates how Arduino can **receive and process serial commands from a Python application**. The system establishes a serial connection between Arduino and Python using the `pyserial` library, enabling external software to control hardware components in real time.
