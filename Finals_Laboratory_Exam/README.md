@@ -1,4 +1,4 @@
-# Final Laboratory Examination Arduino-to-Python Client System (IoT)
+# Final Laboratory Examination: Arduino-to-Python Client System (IoT)
 
 ---
 
