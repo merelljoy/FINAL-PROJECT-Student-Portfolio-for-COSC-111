@@ -1,34 +1,61 @@
-# Laboratory Activity #3: Fire Sensor Simulation
+# Laboratory Activity #3 Working with Sensors
 
-## Description
-This project simulates a fire alarm system using an Arduino. It monitors two inputs: **Temperature** (via a Thermistor) and **Light** (via a Photoresistor). If both the heat and the brightness reach a specific limit, the system triggers a flashing alarm.
+---
+This laboratory activity introduces the use of **sensor components** commonly applied in IoT systems and demonstrates how multiple sensors can be integrated into a single Arduino-based circuit. The activity implements a **simple fire detection system** using a **thermistor** and a **photoresistor**.
+
+By combining temperature and light intensity readings, the system illustrates how environmental data can be processed to trigger hardware-based alerts.
 
 ---
 
 ## Objectives
-* Use sensors to gather environmental data.
-* Convert analog signals into meaningful units (Celsius).
-* Create a safety logic gate (IF Temperature AND Light are high, THEN alarm).
+- Familiarize students with basic sensor components used in IoT  
+- Integrate multiple sensors into an Arduino circuit  
+- Implement a simple fire detection mechanism using sensor data  
 
 ---
 
-## Hardware Setup
-| Component | Pin | Purpose |
-| :--- | :--- | :--- |
-| **Thermistor** | `A0` | Measures heat |
-| **Photoresistor** | `A2` | Measures brightness |
-| **Red LED & Buzzer**| `12` | Visual and audio alarm |
+## Concepts Applied
+- Analog sensor data acquisition  
+- Thermistor temperature calculation in Celsius  
+- Light intensity sensing using a photoresistor  
+- Threshold-based decision logic  
+- Function modularization for sensor readings  
+- Use of `#define` for pin configuration  
+- Use of `const` for fixed threshold values  
+- Digital output control for alert signaling  
 
 ---
 
-## How it Works
-The system follows these safety rules:
-1. **Temperature Threshold:** > 50°C
-2. **Brightness Threshold:** > 220
-3. **Action:** If **both** are met, the LED and Buzzer on Pin 12 blink/beep rapidly.
+## System Overview
+The system uses two sensors to detect potential fire conditions:
 
-### Code Features
-* **Functions:** Separate functions for reading temperature and light.
-* **Definitions:** Uses `#define` for pins and `const` for thresholds to keep the code organized and easy to change.
+### Sensor Configuration
+- **Thermistor** connected to analog pin **A0** for temperature measurement (Celsius)  
+- **Photoresistor** connected to analog pin **A2** for brightness detection  
 
+### Alert Mechanism
+- **Red LED** connected to digital pin **12**  
+- *(Optional)* Buzzer or speaker connected to the same pin  
 
+---
+
+## System Behavior
+- Temperature and brightness readings are handled in **separate functions**  
+- Threshold limits:
+  - Temperature ≥ **50°C**  
+  - Brightness ≥ **220**  
+- When **both thresholds are exceeded**, the system triggers a **fast blinking red LED**  
+- The LED (and optional buzzer) serves as a visual and audible fire alert  
+
+---
+
+## Passing Criteria
+- Working Arduino circuit and sketch  
+- Separate functions for temperature and brightness readings  
+- Use of `#define` for pin assignments  
+- Use of `const` variables for threshold values  
+
+---
+
+## Learning Outcome
+This activity strengthens understanding of **sensor integration**, **environmental data processing**, and **alert-based decision logic**, which are essential concepts in IoT and safety-related systems.
