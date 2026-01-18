@@ -1,40 +1,56 @@
-# Laboratory Activity #2: Working with Analog Signals
+# Laboratory Activity #2 Working with Analog Signals
 
-## Project Overview
-Building upon the foundations of digital signals, this activity explores **Analog Signals** and **Pulse Width Modulation (PWM)** using Arduino. Instead of simple ON/OFF states, this project implements a running light sequence where LED brightness is controlled via `analogWrite()`, and the code structure is optimized using arrays and loops.
+---
+
+## Description
+This laboratory activity introduces **analog signals** and their implementation in an Arduino circuit. Building on the concepts from the first activity, this exercise enhances the running light system by controlling the **brightness of LEDs** using analog signals.
+
+The activity also demonstrates **analog-to-digital signal conversion** and the use of the `map()` function to convert sensor or value ranges into appropriate output levels.
 
 ---
 
 ## Objectives
-* **Analog Implementation:** Understand how to simulate analog output on digital pins using PWM.
-* **Signal Mapping:** Explore the conversion of values and the logic behind signal modulation.
-* **Code Optimization:** Implement `while()` loops and **Arrays** to manage pin modes and LED states efficiently.
+- Understand analog signals and their role in Arduino circuits  
+- Learn how analog values are represented digitally in Arduino  
+- Apply the `map()` function for analog-to-digital signal conversion  
+- Control LED brightness using `analogWrite()`  
+- Utilize arrays and `while()` loops for efficient pin management  
 
 ---
 
-## Hardware Configuration
-The setup uses five LEDs connected to PWM-capable pins (where applicable) or digital pins for signal simulation:
-* **LEDs:** Connected to Pins **12, 11, 10, 9, and 8**.
-* **Resistors:** 220Ω for each LED.
-* **Controller:** Arduino Uno/Mega.
+## Concepts Applied
+- Analog vs digital signals  
+- Pulse Width Modulation (PWM)  
+- LED brightness control using `analogWrite()`  
+- Analog-to-digital value mapping using `map()`  
+- Use of arrays for pin configuration  
+- Looping structures using `while()`  
 
 ---
 
-## Logic and Instructions
-The "Running Light" sequence follows the same directional flow as Activity #1 (Pin 12 to Pin 8) but with updated constraints:
+## System Overview
+The system consists of a **running light circuit** with brightness-controlled LEDs.
 
-1.  **Array Initialization:** All LED pins are stored in an array, and `pinMode` is set using a `while()` loop to demonstrate efficient code scaling.
-2.  **Analog Control:** Instead of `digitalWrite()`, the project uses `analogWrite()` to manage the output signal.
-3.  **The Sequence:**
-    * **Phase 1:** LEDs turn ON one by one (Pin 12 → 8) with a 1-second delay.
-    * **Phase 2:** LEDs turn OFF one by one (Pin 12 → 8) with a 1-second delay.
+### Hardware Configuration
+- Arduino MCU  
+- Five LEDs connected to digital pins **8 to 12**  
+- Resistors, jumper wires, and breadboard  
+
+### Circuit Behavior
+- LEDs turn ON sequentially from **pin 12 down to pin 8**  
+- LED brightness is controlled using `analogWrite()`  
+- Each LED transition has a **1-second delay**  
+- After all LEDs turn ON, they turn OFF one by one in the same order  
+- Pin modes are set using an **array** and controlled using a **while() loop**  
 
 ---
 
-## How to Run
-1.  Clone this repository.
-2.  Connect the LEDs to pins 8 through 12 of your Arduino.
-3.  Upload the `.ino` sketch via the Arduino IDE.
-4.  Observe the sequential lighting effect governed by the array logic.
+## Expected Output
+- LEDs brighten sequentially from pin 12 to pin 8  
+- LEDs dim or turn off sequentially from pin 12 to pin 8  
+- The running light effect continuously repeats with analog brightness control  
 
+---
 
+## Learning Outcome
+This activity helps students understand how **analog signals** and **PWM** are used in Arduino to control output intensity, forming a foundation for sensor-based and adaptive IoT applications.
