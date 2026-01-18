@@ -1,4 +1,4 @@
-# Laboratory Activity #4 Arduino Serial Connection
+# Laboratory Activity #4: Arduino Serial Connection
 
 ---
 This laboratory activity focuses on implementing **serial communication** in Arduino and using the **Serial Monitor** as a control interface. Building on the circuit and code base from Laboratory Activity #3, the activity demonstrates how sensor data and serial commands can work together to control system behavior.
