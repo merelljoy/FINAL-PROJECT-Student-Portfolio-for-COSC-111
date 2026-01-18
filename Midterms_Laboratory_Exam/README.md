@@ -1,4 +1,4 @@
-# Smart Lighting System using Arduino (IoT)
+# Midterm Laboratory Examination Smart Lighting System using Arduino (IoT)
 
 This laboratory activity focuses on designing and programming a smart lighting system using Arduino for an outdoor environment. The system utilizes a photoresistor (LDR) to measure ambient light intensity and automatically controls LED indicators based on predefined thresholds.
 
