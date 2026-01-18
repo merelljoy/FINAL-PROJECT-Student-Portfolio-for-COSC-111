@@ -1,5 +1,4 @@
-# Laboratory Activity #7  
-## Controlling Arduino Using FastAPI
+# Laboratory Activity #7 Controlling Arduino Using FastAPI
 
 ---
 
