@@ -1,32 +1,53 @@
-# Laboratory Activity #1: Working with Digital Signals
+# Laboratory Activity #1 Working with Digital Signals
 
-## Project Overview
-This project is the first laboratory activity for the **IoT Systems Implementation** course. It focuses on the fundamental application of **Digital Signals** using the Arduino platform. The goal is to create a "Running Light" circuit that demonstrates sequential control of hardware outputs.
+---
+
+This laboratory activity introduces the fundamentals of **digital signals** using Arduino as a core device for **IoT systems implementation**. The activity focuses on controlling digital outputs by creating a **running light circuit**, where multiple LEDs are turned on and off in a specific sequence.
+
+Through this exercise, students gain hands-on experience with digital signal control using Arduino’s GPIO pins.
 
 ---
 
 ## Objectives
-* **Review Arduino:** Re-evaluate Arduino’s role as a primary controller in IoT system implementation.
-* **Signal Implementation:** Apply digital signals (HIGH/LOW) within an Arduino circuit using the `digitalWrite()` function.
+- Review Arduino as a platform for IoT system implementation  
+- Understand digital signals and their behavior in an Arduino circuit  
+- Learn how to control digital outputs using `digitalWrite()`  
+- Implement timing control using delay functions  
 
 ---
 
-## Hardware Configuration
-The circuit consists of five LEDs connected to the following Arduino Digital Pins:
-* **LED 1:** Pin 12
-* **LED 2:** Pin 11
-* **LED 3:** Pin 10
-* **LED 4:** Pin 9
-* **LED 5:** Pin 8
+## Concepts Applied
+- Digital input and output signals  
+- GPIO pin configuration using `pinMode()`  
+- LED control using `digitalWrite()`  
+- Looping structures for sequential execution  
+- Timing control using `delay()`  
 
 ---
 
-## Logic and Instructions
-The program follows a specific sequence with a **1-second (1000ms) delay** between each state change:
+## System Overview
+The system consists of a **running light circuit** using five LEDs connected to the Arduino.
 
-1.  **Sequential Power-Up:** Turn all LEDs **ON** one by one, starting from **Pin 12** down to **Pin 8**.
-2.  **Sequential Power-Down:** Turn all LEDs **OFF** one by one, starting from **Pin 12** down to **Pin 8**.
+### Hardware Configuration
+- Arduino MCU  
+- Five LEDs connected to digital pins **8 to 12**  
+- Resistors and jumper wires  
+- Breadboard  
 
-delay(1000);
-digitalWrite(11, HIGH);
-// ... and so on
+### Circuit Behavior
+- LEDs turn **ON one by one** starting from **pin 12 down to pin 8**  
+- After all LEDs are ON, they turn **OFF one by one** in the same order  
+- Each LED change has a **1-second delay**  
+- LED states are controlled using the `digitalWrite()` function  
+
+---
+
+## Expected Output
+- LEDs light up sequentially from pin 12 to pin 8  
+- LEDs turn off sequentially from pin 12 to pin 8  
+- The running light pattern continuously repeats  
+
+---
+
+## Learning Outcome
+This activity strengthens understanding of **digital signal control** in Arduino and builds a foundation for more advanced IoT and automation projects.
