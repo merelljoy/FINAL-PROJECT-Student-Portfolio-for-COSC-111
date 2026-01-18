@@ -1,4 +1,4 @@
-# Laboratory Activity #6 Bidirectional Control Using Arduino and Python
+# Laboratory Activity #6: Bidirectional Control Using Arduino and Python
 
 ---
 This laboratory activity demonstrates **bi-directional serial communication** between Arduino and Python. The system allows Arduino to **send signals to Python** using push buttons (outbound communication) and enables Python to **send control commands back to Arduino** to toggle LEDs (inbound communication).
