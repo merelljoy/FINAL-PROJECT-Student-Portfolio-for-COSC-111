@@ -47,7 +47,7 @@ This activity highlights real-time interaction between hardware inputs and softw
 ---
 ## System Behavior
 
-### 📤 Arduino → Python (Outbound Signal)
+### Arduino → Python (Outbound Signal)
 - Button 1 → Sends `'R'` **once per press**  
 - Button 2 → Sends `'G'` **once per press**  
 - Button 3 → Sends `'B'` **once per press**  
